@@ -180,10 +180,12 @@
               theme: "#ebd0c2"
             }]);
             list.push(temp[i])
+            if (list.length === 1) {
+              play(0);
+            }
           }
         }
         _that.itemList = list;
-        play(0);
         return true;
       }
     }
